@@ -1,0 +1,97 @@
+2018-01-17 20:44:17,432 ERROR: Exception on /reset_password_request [GET] [in c:\program files\python37\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\program files\python37\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\calc\package\routes.py", line 164, in reset_password_request
+    return render_template('reset_password_request.html', title='Reset Password', form=form)
+  File "c:\program files\python37\lib\site-packages\flask\templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\program files\python37\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\program files\python37\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "c:\program files\python37\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "c:\program files\python37\lib\site-packages\jinja2\loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "c:\program files\python37\lib\site-packages\flask\templating.py", line 57, in get_source
+    return self._get_source_fast(environment, template)
+  File "c:\program files\python37\lib\site-packages\flask\templating.py", line 85, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: reset_password_request.html
+2018-01-17 20:45:26,750 INFO: Calculator startup [in C:\calc\package\__init__.py:46]
+2018-01-17 20:47:57,702 INFO: Calculator startup [in C:\calc\package\__init__.py:46]
+2018-01-17 20:48:15,170 ERROR: Exception on /reset_password_request [POST] [in c:\program files\python37\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\program files\python37\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\calc\package\routes.py", line 161, in reset_password_request
+    send_password_reset_email(user)
+  File "C:\calc\package\email.py", line 19, in send_password_reset_email
+    user=user, token=token))
+  File "C:\calc\package\email.py", line 9, in send_email
+    mail.send(msg)
+  File "c:\program files\python37\lib\site-packages\flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "c:\program files\python37\lib\site-packages\flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "c:\program files\python37\lib\site-packages\flask_mail.py", line 158, in configure_host
+    host = smtplib.SMTP(self.mail.server, self.mail.port)
+  File "c:\program files\python37\lib\smtplib.py", line 251, in __init__
+    (code, msg) = self.connect(host, port)
+  File "c:\program files\python37\lib\smtplib.py", line 336, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "c:\program files\python37\lib\smtplib.py", line 307, in _get_socket
+    self.source_address)
+  File "c:\program files\python37\lib\socket.py", line 724, in create_connection
+    raise err
+  File "c:\program files\python37\lib\socket.py", line 713, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+2018-01-17 23:19:09,072 INFO: Calculator startup [in C:\calc\package\__init__.py:46]
+2018-01-17 23:31:57,320 INFO: Calculator startup [in C:\calc\package\__init__.py:46]
+2018-01-17 23:46:46,969 INFO: Calculator startup [in C:\calc\package\__init__.py:46]
+2018-01-17 23:46:59,141 ERROR: Exception on /user/sebastian.borer [POST] [in c:\program files\python37\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\program files\python37\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\program files\python37\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\calc\package\routes.py", line 89, in user
+    app.config['ADMINS'].append(form.user.email)
+AttributeError: 'GroupForm' object has no attribute 'user'
+2018-01-17 23:47:37,887 INFO: Calculator startup [in C:\calc\package\__init__.py:46]
+2018-01-17 23:56:55,816 INFO: Calculator startup [in C:\calc\package\__init__.py:46]
+2018-01-18 00:00:49,608 INFO: Calculator startup [in C:\calc\package\__init__.py:46]
+2018-01-18 00:03:06,695 INFO: Calculator startup [in C:\calc\package\__init__.py:46]
+2018-01-18 00:44:13,052 INFO: Calculator startup [in C:\calc\package\__init__.py:47]

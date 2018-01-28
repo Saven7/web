@@ -1,0 +1,89 @@
+2018-01-19 22:24:13,451 ERROR: Exception on /unfollow/n_xhg [GET] [in c:\program files (x86)\python36-32\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "c:\program files (x86)\python36-32\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\program files (x86)\python36-32\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\program files (x86)\python36-32\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\program files (x86)\python36-32\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "c:\program files (x86)\python36-32\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\program files (x86)\python36-32\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\program files (x86)\python36-32\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\calc\package\routes.py", line 165, in unfollow
+    flash(_('You are no longer following %(user1)s!', uesr1=username))
+  File "c:\program files (x86)\python36-32\lib\site-packages\flask_babel\__init__.py", line 556, in gettext
+    return s if not variables else s % variables
+KeyError: 'user1'
+2018-01-19 22:25:34,513 INFO: Mavki startup [in C:\calc\package\__init__.py:51]
+2018-01-19 22:43:13,518 INFO: Mavki startup [in C:\calc\package\__init__.py:51]
+2018-01-19 22:43:23,310 INFO: Mavki startup [in C:\calc\package\__init__.py:51]
+2018-01-19 22:43:55,217 INFO: Mavki startup [in C:\calc\package\__init__.py:51]
+2018-01-19 22:44:15,756 INFO: Mavki startup [in C:\calc\package\__init__.py:51]
+2018-01-19 22:44:45,395 INFO: Mavki startup [in C:\calc\package\__init__.py:51]
+2018-01-19 22:45:02,558 INFO: Mavki startup [in C:\calc\package\__init__.py:51]
+2018-01-19 22:48:00,104 INFO: Mavki startup [in C:\calc\package\__init__.py:51]
+2018-01-19 22:48:07,438 INFO: Mavki startup [in C:\calc\package\__init__.py:51]
+2018-01-19 22:50:01,166 INFO: Mavki startup [in C:\calc\package\__init__.py:51]
+2018-01-19 22:50:08,854 INFO: Mavki startup [in C:\calc\package\__init__.py:51]
+2018-01-19 22:53:42,504 INFO: Mavki startup [in C:\calc\package\__init__.py:51]
+2018-01-19 22:53:48,058 INFO: Mavki startup [in C:\calc\package\__init__.py:51]
+2018-01-19 22:57:48,352 INFO: Mavki startup [in C:\calc\package\__init__.py:51]
+2018-01-19 23:09:52,223 INFO: Mavki startup [in C:\calc\package\__init__.py:51]
+2018-01-19 23:09:58,878 INFO: Mavki startup [in C:\calc\package\__init__.py:51]
+2018-01-19 23:10:12,549 ERROR: Exception on /reset_password_request [POST] [in c:\program files (x86)\python36-32\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "c:\program files (x86)\python36-32\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\program files (x86)\python36-32\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\program files (x86)\python36-32\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\program files (x86)\python36-32\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "c:\program files (x86)\python36-32\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\program files (x86)\python36-32\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\calc\package\routes.py", line 188, in reset_password_request
+    send_password_reset_email(user)
+  File "C:\calc\package\email.py", line 13, in send_password_reset_email
+    token = user.get_reset_password_token()
+  File "C:\calc\package\models.py", line 66, in get_reset_password_token
+    return jwt.encode(
+AttributeError: module 'jwt' has no attribute 'encode'
+2018-01-19 23:12:15,104 INFO: Mavki startup [in C:\calc\package\__init__.py:51]
+2018-01-19 23:12:52,613 ERROR: Exception on /reset_password_request [POST] [in c:\program files (x86)\python36-32\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "c:\program files (x86)\python36-32\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\program files (x86)\python36-32\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\program files (x86)\python36-32\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\program files (x86)\python36-32\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "c:\program files (x86)\python36-32\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\program files (x86)\python36-32\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\calc\package\routes.py", line 188, in reset_password_request
+    send_password_reset_email(user)
+  File "C:\calc\package\email.py", line 13, in send_password_reset_email
+    token = user.get_reset_password_token()
+  File "C:\calc\package\models.py", line 66, in get_reset_password_token
+    return jwt.encode(
+AttributeError: module 'jwt' has no attribute 'encode'
+2018-01-19 23:14:44,819 INFO: Mavki startup [in C:\calc\package\__init__.py:51]
+2018-01-19 23:19:08,025 INFO: Mavki startup [in C:\calc\package\__init__.py:51]
+2018-01-19 23:19:52,253 INFO: Mavki startup [in C:\calc\package\__init__.py:51]
+2018-01-19 23:20:43,036 INFO: Mavki startup [in C:\calc\package\__init__.py:51]
+2018-01-19 23:21:12,173 INFO: Mavki startup [in C:\calc\package\__init__.py:51]
+2018-01-19 23:24:19,695 INFO: Mavki startup [in C:\calc\package\__init__.py:51]
+2018-01-19 23:26:11,004 INFO: Mavki startup [in C:\calc\package\__init__.py:51]
+2018-01-20 21:17:36,207 INFO: Mavki startup [in C:\calc\package\__init__.py:51]
+2018-01-21 00:01:03,180 INFO: Mavki startup [in C:\calc\package\core\__init__.py:74]

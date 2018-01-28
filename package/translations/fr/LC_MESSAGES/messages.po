@@ -1,0 +1,283 @@
+# French translations for PROJECT.
+# Copyright (C) 2018 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2018-01-21 00:56+0100\n"
+"PO-Revision-Date: 2018-01-19 22:44+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: fr\n"
+"Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+
+#: package/blueprints/auth/email.py:10
+msgid "[Mavki] Reset Your Password"
+msgstr ""
+
+#: package/blueprints/auth/forms.py:10 package/blueprints/auth/forms.py:39
+msgid "Username or Email"
+msgstr ""
+
+#: package/blueprints/auth/forms.py:11 package/blueprints/auth/forms.py:21
+#: package/blueprints/auth/forms.py:45
+msgid "Password"
+msgstr ""
+
+#: package/blueprints/auth/forms.py:12
+msgid "Remember Me"
+msgstr ""
+
+#: package/blueprints/auth/forms.py:13
+msgid "Sign in"
+msgstr ""
+
+#: package/blueprints/auth/forms.py:18 package/blueprints/main/forms.py:10
+#: package/blueprints/main/forms.py:31
+msgid "Username"
+msgstr ""
+
+#: package/blueprints/auth/forms.py:19 package/blueprints/main/forms.py:11
+#: package/blueprints/main/forms.py:32
+msgid "About me *"
+msgstr ""
+
+#: package/blueprints/auth/forms.py:20 package/blueprints/main/forms.py:12
+#: package/blueprints/main/forms.py:33
+msgid "Email"
+msgstr ""
+
+#: package/blueprints/auth/forms.py:23 package/blueprints/auth/forms.py:47
+msgid "Repeat Password"
+msgstr ""
+
+#: package/blueprints/auth/forms.py:24
+msgid "Submit Registration"
+msgstr ""
+
+#: package/blueprints/auth/forms.py:29 package/blueprints/main/forms.py:26
+#: package/blueprints/main/forms.py:44
+msgid "Please use a different username."
+msgstr ""
+
+#: package/blueprints/auth/forms.py:34
+msgid "Please use a different email address."
+msgstr ""
+
+#: package/blueprints/auth/forms.py:40 package/blueprints/auth/forms.py:48
+msgid "Request Password Reset"
+msgstr ""
+
+#: package/blueprints/auth/routes.py:24
+msgid "Invalid username or password"
+msgstr ""
+
+#: package/blueprints/auth/routes.py:31
+#: package/blueprints/auth/templates/login.html:4
+msgid "Sign In"
+msgstr ""
+
+#: package/blueprints/auth/routes.py:52
+msgid "Your are a registered user now! You may log in."
+msgstr ""
+
+#: package/blueprints/auth/routes.py:54
+#: package/blueprints/auth/templates/register.html:4
+msgid "Register"
+msgstr ""
+
+#: package/blueprints/auth/routes.py:70
+msgid "Email was sent. Check your inbox for further instructions."
+msgstr ""
+
+#: package/blueprints/auth/routes.py:87
+msgid "Your password has been reset."
+msgstr ""
+
+#: package/blueprints/auth/templates/login.html:11
+msgid "Forgot Your Password?"
+msgstr ""
+
+#: package/blueprints/auth/templates/login.html:12
+msgid "Click to Reset It"
+msgstr ""
+
+#: package/blueprints/auth/templates/login.html:14
+msgid "New User?"
+msgstr ""
+
+#: package/blueprints/auth/templates/login.html:14
+msgid "Click to Register!"
+msgstr ""
+
+#: package/blueprints/auth/templates/reset_password.html:4
+msgid "Reset Your Password"
+msgstr ""
+
+#: package/blueprints/auth/templates/reset_password_request.html:4
+msgid "Reset Password"
+msgstr ""
+
+#: package/blueprints/errors/templates/404.html:4
+msgid "The site you were looking for does not exist."
+msgstr ""
+
+#: package/blueprints/errors/templates/404.html:5
+#: package/blueprints/errors/templates/500.html:6
+msgid "Back to homepage"
+msgstr ""
+
+#: package/blueprints/errors/templates/500.html:4
+msgid "An unexpected error has occurred"
+msgstr ""
+
+#: package/blueprints/errors/templates/500.html:5
+msgid "The administrator has been notified. Sorry for the inconvenience!"
+msgstr ""
+
+#: package/blueprints/main/forms.py:13
+msgid "Password *"
+msgstr ""
+
+#: package/blueprints/main/forms.py:15
+msgid "Repeat Password *"
+msgstr ""
+
+#: package/blueprints/main/forms.py:16 package/blueprints/main/forms.py:34
+#: package/blueprints/main/forms.py:51 package/blueprints/main/forms.py:57
+msgid "Submit"
+msgstr ""
+
+#: package/blueprints/main/forms.py:49
+msgid "Say something:"
+msgstr ""
+
+#: package/blueprints/main/routes.py:30
+msgid "Your post is now online!"
+msgstr ""
+
+#: package/blueprints/main/routes.py:37
+msgid "Home Page"
+msgstr ""
+
+#: package/blueprints/main/routes.py:58
+#, python-format
+msgid "%(user1)s is admin: %(boolu)s"
+msgstr ""
+
+#: package/blueprints/main/routes.py:77 package/blueprints/main/routes.py:99
+msgid "Your changes have been saved."
+msgstr ""
+
+#: package/blueprints/main/routes.py:114 package/blueprints/main/routes.py:131
+#, python-format
+msgid "User %(user1)s not found."
+msgstr ""
+
+#: package/blueprints/main/routes.py:117
+msgid "You cannot follow yourself!"
+msgstr ""
+
+#: package/blueprints/main/routes.py:121
+#, python-format
+msgid "You are following %(user1)s now!"
+msgstr ""
+
+#: package/blueprints/main/routes.py:134
+msgid "You cannot unfollow yourself!"
+msgstr ""
+
+#: package/blueprints/main/routes.py:138
+#, python-format
+msgid "You are no longer following %(user1)s!"
+msgstr ""
+
+#: package/blueprints/main/templates/_post.html:16
+#, python-format
+msgid "%(username)s said %(when)s"
+msgstr ""
+
+#: package/blueprints/main/templates/base.html:5
+msgid "Welcome to Mavki"
+msgstr ""
+
+#: package/blueprints/main/templates/base.html:22
+msgid "Home"
+msgstr ""
+
+#: package/blueprints/main/templates/base.html:23
+msgid "Explore"
+msgstr ""
+
+#: package/blueprints/main/templates/base.html:27
+msgid "Login"
+msgstr ""
+
+#: package/blueprints/main/templates/base.html:29
+msgid "Profile"
+msgstr ""
+
+#: package/blueprints/main/templates/base.html:30
+msgid "Logout"
+msgstr ""
+
+#: package/blueprints/main/templates/edit_profile.html:4
+msgid "Edit Profile"
+msgstr ""
+
+#: package/blueprints/main/templates/index.html:5
+#, python-format
+msgid "Hi, %(username)s!"
+msgstr ""
+
+#: package/blueprints/main/templates/index.html:18
+#: package/blueprints/main/templates/user.html:45
+msgid "Newer posts"
+msgstr ""
+
+#: package/blueprints/main/templates/index.html:23
+#: package/blueprints/main/templates/user.html:50
+msgid "Older posts"
+msgstr ""
+
+#: package/blueprints/main/templates/user.html:8
+msgid "User"
+msgstr ""
+
+#: package/blueprints/main/templates/user.html:11
+msgid "Last seen on"
+msgstr ""
+
+#: package/blueprints/main/templates/user.html:13
+#, python-format
+msgid "%(count)d followers"
+msgstr ""
+
+#: package/blueprints/main/templates/user.html:13
+#, python-format
+msgid "%(count)d following"
+msgstr ""
+
+#: package/blueprints/main/templates/user.html:15
+msgid "Edit your profile"
+msgstr ""
+
+#: package/blueprints/main/templates/user.html:17
+msgid "Follow"
+msgstr ""
+
+#: package/blueprints/main/templates/user.html:19
+msgid "Unfollow"
+msgstr ""
+
+#: package/core/__init__.py:20
+msgid "Please log in to access this page."
+msgstr ""
+

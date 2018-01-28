@@ -1,0 +1,133 @@
+2018-01-16 19:22:44,687 ERROR: Exception on /user/saven [GET] [in c:\program files\python37\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\program files\python37\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\program files\python37\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\saven\Documents\calc\package\routes.py", line 76, in user
+    return render_template('user.html', user=user, form=form, posts=posts)
+  File "c:\program files\python37\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "c:\program files\python37\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "c:\program files\python37\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "c:\program files\python37\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "c:\program files\python37\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\program files\python37\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\saven\Documents\calc\package\templates\user.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\saven\Documents\calc\package\templates\base.html", line 34, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Users\saven\Documents\calc\package\templates\user.html", line 16, in block "content"
+    <p><a href="{{ url_for('edit_profile') }}">Edit your profile</a></p>
+  File "c:\program files\python37\lib\site-packages\flask\helpers.py", line 333, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1805, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "c:\program files\python37\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "c:\program files\python37\lib\site-packages\flask\helpers.py", line 323, in url_for
+    force_external=external)
+  File "c:\program files\python37\lib\site-packages\werkzeug\routing.py", line 1776, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'edit_profile'. Did you forget to specify values ['username']?
+2018-01-16 19:23:59,446 ERROR: Exception on /user/saven [GET] [in c:\program files\python37\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\program files\python37\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\program files\python37\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\saven\Documents\calc\package\routes.py", line 76, in user
+    return render_template('user.html', user=user, form=form, posts=posts)
+  File "c:\program files\python37\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "c:\program files\python37\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "c:\program files\python37\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "c:\program files\python37\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "c:\program files\python37\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\program files\python37\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\saven\Documents\calc\package\templates\user.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\saven\Documents\calc\package\templates\base.html", line 34, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Users\saven\Documents\calc\package\templates\user.html", line 16, in block "content"
+    <p><a href="{{ url_for('edit_profile') }}">Edit your profile</a></p>
+  File "c:\program files\python37\lib\site-packages\flask\helpers.py", line 333, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1805, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "c:\program files\python37\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "c:\program files\python37\lib\site-packages\flask\helpers.py", line 323, in url_for
+    force_external=external)
+  File "c:\program files\python37\lib\site-packages\werkzeug\routing.py", line 1776, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'edit_profile'. Did you forget to specify values ['username']?
+2018-01-16 19:25:38,054 INFO: Calculator startup [in C:\Users\saven\Documents\calc\package\__init__.py:43]
+2018-01-16 19:25:42,034 ERROR: Exception on /user/saven [GET] [in c:\program files\python37\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\program files\python37\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\program files\python37\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\saven\Documents\calc\package\routes.py", line 76, in user
+    return render_template('user.html', user=user, form=form, posts=posts)
+  File "c:\program files\python37\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "c:\program files\python37\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "c:\program files\python37\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "c:\program files\python37\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "c:\program files\python37\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\program files\python37\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\saven\Documents\calc\package\templates\user.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\saven\Documents\calc\package\templates\base.html", line 34, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Users\saven\Documents\calc\package\templates\user.html", line 16, in block "content"
+    <p><a href="{{ url_for('edit_profile', user.username) }}">Edit your profile</a></p>
+TypeError: url_for() takes 1 positional argument but 2 were given
+2018-01-16 19:26:23,187 INFO: Calculator startup [in C:\Users\saven\Documents\calc\package\__init__.py:43]

@@ -1,0 +1,138 @@
+2018-01-16 18:19:01,690 ERROR: Exception on /user/saven [GET] [in c:\program files\python37\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\program files\python37\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\program files\python37\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\saven\Documents\calc\package\routes.py", line 76, in user
+    return render_template('user.html', user=user, form=form, posts=posts)
+  File "c:\program files\python37\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "c:\program files\python37\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "c:\program files\python37\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "c:\program files\python37\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "c:\program files\python37\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\program files\python37\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\saven\Documents\calc\package\templates\user.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\saven\Documents\calc\package\templates\base.html", line 20, in top-level template code
+    {% if current_user.is_admin() %}
+  File "C:\Users\saven\Documents\calc\package\models.py", line 62, in is_admin
+    return user_admin == 'admin'
+NameError: name 'user_admin' is not defined
+2018-01-16 18:19:28,893 INFO: Calculator startup [in C:\Users\saven\Documents\calc\package\__init__.py:43]
+2018-01-16 18:20:39,561 INFO: Calculator startup [in C:\Users\saven\Documents\calc\package\__init__.py:43]
+2018-01-16 18:22:23,807 INFO: Calculator startup [in C:\Users\saven\Documents\calc\package\__init__.py:43]
+2018-01-16 18:22:45,636 ERROR: Exception on /user/saven [POST] [in c:\program files\python37\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\program files\python37\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\program files\python37\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\saven\Documents\calc\package\routes.py", line 75, in user
+    return redirect(url_for(user))
+  File "c:\program files\python37\lib\site-packages\flask\helpers.py", line 280, in url_for
+    if endpoint[:1] == '.':
+TypeError: 'User' object is not subscriptable
+2018-01-16 18:26:43,483 INFO: Calculator startup [in C:\Users\saven\Documents\calc\package\__init__.py:43]
+2018-01-16 18:26:45,822 ERROR: Exception on /user/saven [GET] [in c:\program files\python37\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\program files\python37\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\program files\python37\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\saven\Documents\calc\package\routes.py", line 78, in user
+    return render_template('user.html', user=user, form=form, posts=posts)
+  File "c:\program files\python37\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "c:\program files\python37\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "c:\program files\python37\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "c:\program files\python37\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "c:\program files\python37\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\program files\python37\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\saven\Documents\calc\package\templates\user.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\saven\Documents\calc\package\templates\base.html", line 34, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Users\saven\Documents\calc\package\templates\user.html", line 24, in block "content"
+    <p>{{ form.user_admin() }}{{ form.user_admin.label }}</p>
+TypeError: 'bool' object is not callable
+2018-01-16 18:28:35,037 INFO: Calculator startup [in C:\Users\saven\Documents\calc\package\__init__.py:43]
+2018-01-16 18:28:37,269 ERROR: Exception on /user/saven [GET] [in c:\program files\python37\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\program files\python37\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\program files\python37\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\saven\Documents\calc\package\routes.py", line 78, in user
+    return render_template('user.html', user=user, form=form, posts=posts)
+  File "c:\program files\python37\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "c:\program files\python37\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "c:\program files\python37\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "c:\program files\python37\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "c:\program files\python37\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\program files\python37\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\saven\Documents\calc\package\templates\user.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\saven\Documents\calc\package\templates\base.html", line 34, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Users\saven\Documents\calc\package\templates\user.html", line 24, in block "content"
+    <p>{{ form.user_admin() }} {{ form.user_admin.label }}</p>
+TypeError: 'bool' object is not callable
+2018-01-16 18:29:48,598 INFO: Calculator startup [in C:\Users\saven\Documents\calc\package\__init__.py:43]

@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+
+{% block app_content %}
+	<h1>{{ _('The site you were looking for does not exist.') }}</h1>
+	<p><a href="{{ url_for('main.index') }}">{{ _('Back to homepage') }}</a></p>
+{% endblock %}

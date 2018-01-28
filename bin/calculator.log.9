@@ -1,0 +1,91 @@
+2018-01-15 23:23:13,832 INFO: Calculator startup [in C:\Users\saven\Documents\calc\package\__init__.py:43]
+2018-01-16 11:26:49,842 INFO: Calculator startup [in C:\Users\saven\Documents\calc\package\__init__.py:43]
+2018-01-16 11:26:58,194 ERROR: Exception on /user/dev [GET] [in c:\program files\python37\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "c:\program files\python37\lib\site-packages\sqlalchemy-1.2.1-py3.7-win-amd64.egg\sqlalchemy\engine\base.py", line 1193, in _execute_context
+    context)
+  File "c:\program files\python37\lib\site-packages\sqlalchemy-1.2.1-py3.7-win-amd64.egg\sqlalchemy\engine\default.py", line 507, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such table: followers
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\program files\python37\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\program files\python37\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\saven\Documents\calc\package\routes.py", line 80, in user
+    return render_template('user.html', user=user, posts=posts)
+  File "c:\program files\python37\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "c:\program files\python37\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "c:\program files\python37\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "c:\program files\python37\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "c:\program files\python37\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\program files\python37\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\saven\Documents\calc\package\templates\user.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\saven\Documents\calc\package\templates\base.html", line 30, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Users\saven\Documents\calc\package\templates\user.html", line 11, in block "content"
+    <p>{{ user.followers.count() }} followers, {{ user.followed.count() }} following.<p>
+  File "c:\program files\python37\lib\site-packages\sqlalchemy-1.2.1-py3.7-win-amd64.egg\sqlalchemy\orm\dynamic.py", line 264, in count
+    return self._clone(sess).count()
+  File "c:\program files\python37\lib\site-packages\sqlalchemy-1.2.1-py3.7-win-amd64.egg\sqlalchemy\orm\query.py", line 3113, in count
+    return self.from_self(col).scalar()
+  File "c:\program files\python37\lib\site-packages\sqlalchemy-1.2.1-py3.7-win-amd64.egg\sqlalchemy\orm\query.py", line 2866, in scalar
+    ret = self.one()
+  File "c:\program files\python37\lib\site-packages\sqlalchemy-1.2.1-py3.7-win-amd64.egg\sqlalchemy\orm\query.py", line 2837, in one
+    ret = self.one_or_none()
+  File "c:\program files\python37\lib\site-packages\sqlalchemy-1.2.1-py3.7-win-amd64.egg\sqlalchemy\orm\query.py", line 2807, in one_or_none
+    ret = list(self)
+  File "c:\program files\python37\lib\site-packages\sqlalchemy-1.2.1-py3.7-win-amd64.egg\sqlalchemy\orm\query.py", line 2878, in __iter__
+    return self._execute_and_instances(context)
+  File "c:\program files\python37\lib\site-packages\sqlalchemy-1.2.1-py3.7-win-amd64.egg\sqlalchemy\orm\query.py", line 2901, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "c:\program files\python37\lib\site-packages\sqlalchemy-1.2.1-py3.7-win-amd64.egg\sqlalchemy\engine\base.py", line 948, in execute
+    return meth(self, multiparams, params)
+  File "c:\program files\python37\lib\site-packages\sqlalchemy-1.2.1-py3.7-win-amd64.egg\sqlalchemy\sql\elements.py", line 269, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "c:\program files\python37\lib\site-packages\sqlalchemy-1.2.1-py3.7-win-amd64.egg\sqlalchemy\engine\base.py", line 1060, in _execute_clauseelement
+    compiled_sql, distilled_params
+  File "c:\program files\python37\lib\site-packages\sqlalchemy-1.2.1-py3.7-win-amd64.egg\sqlalchemy\engine\base.py", line 1200, in _execute_context
+    context)
+  File "c:\program files\python37\lib\site-packages\sqlalchemy-1.2.1-py3.7-win-amd64.egg\sqlalchemy\engine\base.py", line 1413, in _handle_dbapi_exception
+    exc_info
+  File "c:\program files\python37\lib\site-packages\sqlalchemy-1.2.1-py3.7-win-amd64.egg\sqlalchemy\util\compat.py", line 203, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "c:\program files\python37\lib\site-packages\sqlalchemy-1.2.1-py3.7-win-amd64.egg\sqlalchemy\util\compat.py", line 186, in reraise
+    raise value.with_traceback(tb)
+  File "c:\program files\python37\lib\site-packages\sqlalchemy-1.2.1-py3.7-win-amd64.egg\sqlalchemy\engine\base.py", line 1193, in _execute_context
+    context)
+  File "c:\program files\python37\lib\site-packages\sqlalchemy-1.2.1-py3.7-win-amd64.egg\sqlalchemy\engine\default.py", line 507, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: followers [SQL: 'SELECT count(*) AS count_1 \nFROM (SELECT user.id AS user_id, user.username AS user_username, user.email AS user_email, user.password_hash AS user_password_hash, user.about_me AS user_about_me, user.last_seen AS user_last_seen \nFROM user, followers \nWHERE followers.followed_id = ? AND followers.follower_id = user.id) AS anon_1'] [parameters: (1,)] (Background on this error at: http://sqlalche.me/e/e3q8)
+2018-01-16 11:30:15,677 INFO: Calculator startup [in C:\Users\saven\Documents\calc\package\__init__.py:43]
+2018-01-16 11:30:25,295 INFO: Calculator startup [in C:\Users\saven\Documents\calc\package\__init__.py:43]
+2018-01-16 11:30:36,362 INFO: Calculator startup [in C:\Users\saven\Documents\calc\package\__init__.py:43]
+2018-01-16 11:30:42,206 INFO: Calculator startup [in C:\Users\saven\Documents\calc\package\__init__.py:43]
+2018-01-16 13:02:18,918 INFO: Calculator startup [in C:\Users\saven\Documents\calc\package\__init__.py:43]
+2018-01-16 13:02:48,871 INFO: Calculator startup [in C:\Users\saven\Documents\calc\package\__init__.py:43]
+2018-01-16 13:02:53,170 INFO: Calculator startup [in C:\Users\saven\Documents\calc\package\__init__.py:43]
+2018-01-16 13:03:01,502 INFO: Calculator startup [in C:\Users\saven\Documents\calc\package\__init__.py:43]
+2018-01-16 13:03:06,069 INFO: Calculator startup [in C:\Users\saven\Documents\calc\package\__init__.py:43]
+2018-01-16 13:10:10,671 INFO: Calculator startup [in C:\Users\saven\Documents\calc\package\__init__.py:43]
+2018-01-16 17:19:35,741 INFO: Calculator startup [in C:\Users\saven\Documents\calc\package\__init__.py:43]

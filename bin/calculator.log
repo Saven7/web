@@ -1,0 +1,53 @@
+2018-01-18 01:02:56,781 INFO: Calculator startup [in C:\calc\package\__init__.py:47]
+2018-01-18 16:46:48,786 INFO: Calculator startup [in C:\calc\package\__init__.py:49]
+2018-01-18 16:49:29,563 INFO: Calculator startup [in C:\calc\package\__init__.py:49]
+2018-01-18 16:49:31,943 ERROR: Exception on /user/saven [GET] [in c:\program files\python37\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\program files\python37\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\program files\python37\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\calc\package\routes.py", line 95, in user
+    next_url=next_url, prev_url=prev_url)
+  File "c:\program files\python37\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "c:\program files\python37\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "c:\program files\python37\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "c:\program files\python37\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "c:\program files\python37\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\program files\python37\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\calc\package\templates\user.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\calc\package\templates\base.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "c:\program files\python37\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "c:\program files\python37\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block "doc"
+    {%- block html %}
+  File "c:\program files\python37\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block "html"
+    {% block body -%}
+  File "c:\program files\python37\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 23, in block "body"
+    {% block content -%}
+  File "C:\calc\package\templates\base.html", line 53, in block "content"
+    {% block app_content %}{% endblock %}
+  File "C:\calc\package\templates\user.html", line 26, in block "app_content"
+    {% if app.config['HIRE'] %}
+  File "c:\program files\python37\lib\site-packages\jinja2\environment.py", line 430, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'app' is undefined
+2018-01-18 16:50:22,381 INFO: Calculator startup [in C:\calc\package\__init__.py:49]

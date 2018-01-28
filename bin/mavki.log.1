@@ -1,0 +1,105 @@
+2018-01-21 00:40:23,528 INFO: Mavki startup [in C:\calc\package\core\__init__.py:74]
+2018-01-21 00:40:26,259 ERROR: Exception on /user/saven [GET] [in c:\program files (x86)\python36-32\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "c:\program files (x86)\python36-32\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\program files (x86)\python36-32\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\program files (x86)\python36-32\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\program files (x86)\python36-32\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "c:\program files (x86)\python36-32\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\program files (x86)\python36-32\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\program files (x86)\python36-32\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\calc\package\blueprints\main\routes.py", line 61, in user
+    next_url=next_url, prev_url=prev_url, app=current_app)
+  File "c:\program files (x86)\python36-32\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "c:\program files (x86)\python36-32\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "c:\program files (x86)\python36-32\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "c:\program files (x86)\python36-32\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "c:\program files (x86)\python36-32\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\program files (x86)\python36-32\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\calc\package\blueprints\main\templates\user.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\calc\package\blueprints\main\templates\base.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "c:\program files (x86)\python36-32\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "c:\program files (x86)\python36-32\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block "doc"
+    {%- block html %}
+  File "c:\program files (x86)\python36-32\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block "html"
+    {% block body -%}
+  File "c:\program files (x86)\python36-32\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 23, in block "body"
+    {% block content -%}
+  File "C:\calc\package\blueprints\main\templates\base.html", line 53, in block "content"
+    {% block app_content %}{% endblock %}
+  File "C:\calc\package\blueprints\main\templates\user.html", line 15, in block "app_content"
+    <p><a href="{{ url_for('auth.edit_profile') }}">{{ _('Edit your profile') }}</a></p>
+  File "c:\program files (x86)\python36-32\lib\site-packages\flask\helpers.py", line 333, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "c:\program files (x86)\python36-32\lib\site-packages\flask\app.py", line 1805, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "c:\program files (x86)\python36-32\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "c:\program files (x86)\python36-32\lib\site-packages\flask\helpers.py", line 323, in url_for
+    force_external=external)
+  File "c:\program files (x86)\python36-32\lib\site-packages\werkzeug\routing.py", line 1776, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'auth.edit_profile'. Did you mean 'main.edit_profile' instead?
+2018-01-21 00:41:10,932 INFO: Mavki startup [in C:\calc\package\core\__init__.py:74]
+2018-01-21 00:43:04,924 INFO: Mavki startup [in C:\calc\package\core\__init__.py:74]
+2018-01-21 00:49:55,789 INFO: Mavki startup [in C:\calc\package\core\__init__.py:74]
+2018-01-21 00:50:04,512 ERROR: Exception on /auth/reset_password_request [POST] [in c:\program files (x86)\python36-32\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "c:\program files (x86)\python36-32\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\program files (x86)\python36-32\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\program files (x86)\python36-32\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\program files (x86)\python36-32\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "c:\program files (x86)\python36-32\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\program files (x86)\python36-32\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\calc\package\blueprints\auth\routes.py", line 69, in reset_password_request
+    send_password_reset_email(user)
+  File "C:\calc\package\blueprints\auth\email.py", line 14, in send_password_reset_email
+    user=user, token=token),
+  File "c:\program files (x86)\python36-32\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "c:\program files (x86)\python36-32\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "c:\program files (x86)\python36-32\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "c:\program files (x86)\python36-32\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "c:\program files (x86)\python36-32\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\program files (x86)\python36-32\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\calc\package\blueprints\auth\templates\email\reset_password.txt", line 3, in top-level template code
+    {{ url_for('reset_password', token=token, _external=True) }}
+  File "c:\program files (x86)\python36-32\lib\site-packages\flask\helpers.py", line 333, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "c:\program files (x86)\python36-32\lib\site-packages\flask\app.py", line 1805, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "c:\program files (x86)\python36-32\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "c:\program files (x86)\python36-32\lib\site-packages\flask\helpers.py", line 323, in url_for
+    force_external=external)
+  File "c:\program files (x86)\python36-32\lib\site-packages\werkzeug\routing.py", line 1776, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'reset_password' with values ['token']. Did you mean 'auth.reset_password' instead?
+2018-01-21 00:52:59,869 INFO: Mavki startup [in C:\calc\package\core\__init__.py:74]

@@ -1,0 +1,47 @@
+2018-01-21 00:53:02,807 ERROR: Exception on /auth/reset_password_request [POST] [in c:\program files (x86)\python36-32\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "c:\program files (x86)\python36-32\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\program files (x86)\python36-32\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\program files (x86)\python36-32\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\program files (x86)\python36-32\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "c:\program files (x86)\python36-32\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\program files (x86)\python36-32\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\calc\package\blueprints\auth\routes.py", line 69, in reset_password_request
+    send_password_reset_email(user)
+  File "C:\calc\package\blueprints\auth\email.py", line 14, in send_password_reset_email
+    user=user, token=token),
+  File "c:\program files (x86)\python36-32\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "c:\program files (x86)\python36-32\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "c:\program files (x86)\python36-32\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "c:\program files (x86)\python36-32\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "c:\program files (x86)\python36-32\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\program files (x86)\python36-32\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\calc\package\blueprints\auth\templates\email\reset_password.txt", line 3, in top-level template code
+    {{ url_for('reset_password', token=token, _external=True) }}
+  File "c:\program files (x86)\python36-32\lib\site-packages\flask\helpers.py", line 333, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "c:\program files (x86)\python36-32\lib\site-packages\flask\app.py", line 1805, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "c:\program files (x86)\python36-32\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "c:\program files (x86)\python36-32\lib\site-packages\flask\helpers.py", line 323, in url_for
+    force_external=external)
+  File "c:\program files (x86)\python36-32\lib\site-packages\werkzeug\routing.py", line 1776, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'reset_password' with values ['token']. Did you mean 'auth.reset_password' instead?
+2018-01-21 00:55:23,340 INFO: Mavki startup [in C:\calc\package\core\__init__.py:74]
+2018-01-21 00:56:41,919 INFO: Mavki startup [in C:\calc\package\core\__init__.py:74]
+2018-01-21 01:01:54,427 INFO: Mavki startup [in C:\calc\package\core\__init__.py:74]
+2018-01-21 01:02:02,063 INFO: Mavki startup [in C:\calc\package\core\__init__.py:74]

@@ -1,0 +1,99 @@
+2018-01-16 18:29:59,086 ERROR: Exception on /user/saven [POST] [in c:\program files\python37\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\program files\python37\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\program files\python37\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\saven\Documents\calc\package\routes.py", line 75, in user
+    return redirect(url_for(user))
+  File "c:\program files\python37\lib\site-packages\flask\helpers.py", line 280, in url_for
+    if endpoint[:1] == '.':
+TypeError: 'User' object is not subscriptable
+2018-01-16 18:35:57,158 INFO: Calculator startup [in C:\Users\saven\Documents\calc\package\__init__.py:43]
+2018-01-16 18:36:54,126 INFO: Calculator startup [in C:\Users\saven\Documents\calc\package\__init__.py:43]
+2018-01-16 18:37:07,584 INFO: Calculator startup [in C:\Users\saven\Documents\calc\package\__init__.py:43]
+2018-01-16 18:38:06,923 INFO: Calculator startup [in C:\Users\saven\Documents\calc\package\__init__.py:43]
+2018-01-16 18:43:35,266 INFO: Calculator startup [in C:\Users\saven\Documents\calc\package\__init__.py:43]
+2018-01-16 18:48:47,459 INFO: Calculator startup [in C:\Users\saven\Documents\calc\package\__init__.py:43]
+2018-01-16 18:49:00,405 INFO: Calculator startup [in C:\Users\saven\Documents\calc\package\__init__.py:43]
+2018-01-16 18:50:28,741 INFO: Calculator startup [in C:\Users\saven\Documents\calc\package\__init__.py:43]
+2018-01-16 18:51:40,398 ERROR: Exception on /login [GET] [in c:\program files\python37\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\program files\python37\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\saven\Documents\calc\package\routes.py", line 44, in login
+    return render_template('login.html', title='Sign In', form=form)
+  File "c:\program files\python37\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "c:\program files\python37\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "c:\program files\python37\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "c:\program files\python37\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "c:\program files\python37\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\program files\python37\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\saven\Documents\calc\package\templates\login.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\saven\Documents\calc\package\templates\base.html", line 20, in top-level template code
+    {% if current_user.is_admin() %}
+jinja2.exceptions.UndefinedError: 'flask_login.mixins.AnonymousUserMixin object' has no attribute 'is_admin'
+2018-01-16 18:53:57,951 ERROR: Exception on /login [GET] [in c:\program files\python37\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\program files\python37\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\saven\Documents\calc\package\routes.py", line 44, in login
+    return render_template('login.html', title='Sign In', form=form)
+  File "c:\program files\python37\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "c:\program files\python37\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "c:\program files\python37\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "c:\program files\python37\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "c:\program files\python37\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\program files\python37\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\saven\Documents\calc\package\templates\login.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\saven\Documents\calc\package\templates\base.html", line 20, in top-level template code
+    {% if current_user.is_admin() %}
+jinja2.exceptions.UndefinedError: 'flask_login.mixins.AnonymousUserMixin object' has no attribute 'is_admin'
+2018-01-16 18:57:33,567 INFO: Calculator startup [in C:\Users\saven\Documents\calc\package\__init__.py:43]
+2018-01-16 19:00:45,811 INFO: Calculator startup [in C:\Users\saven\Documents\calc\package\__init__.py:43]
+2018-01-16 19:01:09,246 INFO: Calculator startup [in C:\Users\saven\Documents\calc\package\__init__.py:43]
+2018-01-16 19:19:49,235 INFO: Calculator startup [in C:\Users\saven\Documents\calc\package\__init__.py:43]
