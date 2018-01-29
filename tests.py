@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/home/mavki/mavki/venv/bin python
 from package.core import create_app, db
 from package.core.models import User, Post
 from datetime import datetime, timedelta

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-01-21 00:56+0100\n"
+"POT-Creation-Date: 2018-01-29 06:51+0100\n"
 "PO-Revision-Date: 2018-01-19 19:06+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -39,18 +39,18 @@ msgstr "Merke Login"
 msgid "Sign in"
 msgstr "Login"
 
-#: package/blueprints/auth/forms.py:18 package/blueprints/main/forms.py:10
-#: package/blueprints/main/forms.py:31
+#: package/blueprints/auth/forms.py:18 package/blueprints/main/forms.py:11
+#: package/blueprints/main/forms.py:32
 msgid "Username"
 msgstr "Benutzername"
 
-#: package/blueprints/auth/forms.py:19 package/blueprints/main/forms.py:11
-#: package/blueprints/main/forms.py:32
+#: package/blueprints/auth/forms.py:19 package/blueprints/main/forms.py:12
+#: package/blueprints/main/forms.py:33
 msgid "About me *"
 msgstr "Über mich"
 
-#: package/blueprints/auth/forms.py:20 package/blueprints/main/forms.py:12
-#: package/blueprints/main/forms.py:33
+#: package/blueprints/auth/forms.py:20 package/blueprints/main/forms.py:13
+#: package/blueprints/main/forms.py:34
 msgid "Email"
 msgstr "Email"
 
@@ -62,8 +62,8 @@ msgstr "Wiederhole Passwort"
 msgid "Submit Registration"
 msgstr "Registrierung abschliessen"
 
-#: package/blueprints/auth/forms.py:29 package/blueprints/main/forms.py:26
-#: package/blueprints/main/forms.py:44
+#: package/blueprints/auth/forms.py:29 package/blueprints/main/forms.py:27
+#: package/blueprints/main/forms.py:45
 msgid "Please use a different username."
 msgstr "Bitte benutzen Sie einen anderen Benutzernamen"
 
@@ -146,59 +146,63 @@ msgstr ""
 "Ein Administrator wurde benachrichtigt. Wir entschuldigen uns für die "
 "Unannehmlichkeiten!"
 
-#: package/blueprints/main/forms.py:13
+#: package/blueprints/main/forms.py:14
 msgid "Password *"
 msgstr "Passwort *"
 
-#: package/blueprints/main/forms.py:15
+#: package/blueprints/main/forms.py:16
 msgid "Repeat Password *"
 msgstr "Wiederholen das Passwort"
 
-#: package/blueprints/main/forms.py:16 package/blueprints/main/forms.py:34
-#: package/blueprints/main/forms.py:51 package/blueprints/main/forms.py:57
+#: package/blueprints/main/forms.py:17 package/blueprints/main/forms.py:35
+#: package/blueprints/main/forms.py:52 package/blueprints/main/forms.py:58
 msgid "Submit"
 msgstr "Senden"
 
-#: package/blueprints/main/forms.py:49
+#: package/blueprints/main/forms.py:50
 msgid "Say something:"
 msgstr "Sagen Sie etwas:"
 
-#: package/blueprints/main/routes.py:30
+#: package/blueprints/main/forms.py:63 package/blueprints/main/routes.py:166
+msgid "Search"
+msgstr ""
+
+#: package/blueprints/main/routes.py:31
 msgid "Your post is now online!"
 msgstr "Ihr Post ist jetzt online!"
 
-#: package/blueprints/main/routes.py:37
+#: package/blueprints/main/routes.py:38
 msgid "Home Page"
 msgstr "Startseite"
 
-#: package/blueprints/main/routes.py:58
+#: package/blueprints/main/routes.py:59
 #, python-format
 msgid "%(user1)s is admin: %(boolu)s"
 msgstr ""
 
-#: package/blueprints/main/routes.py:77 package/blueprints/main/routes.py:99
+#: package/blueprints/main/routes.py:78 package/blueprints/main/routes.py:100
 msgid "Your changes have been saved."
 msgstr "Ihre änderungen wurden gespeichert."
 
-#: package/blueprints/main/routes.py:114 package/blueprints/main/routes.py:131
+#: package/blueprints/main/routes.py:115 package/blueprints/main/routes.py:132
 #, python-format
 msgid "User %(user1)s not found."
 msgstr "Nutzer %(user1)s wurde nicht gefunden."
 
-#: package/blueprints/main/routes.py:117
+#: package/blueprints/main/routes.py:118
 msgid "You cannot follow yourself!"
 msgstr "Sie können sich nicht selber folgen!"
 
-#: package/blueprints/main/routes.py:121
+#: package/blueprints/main/routes.py:122
 #, python-format
 msgid "You are following %(user1)s now!"
 msgstr "Sie folgen %(user1)s nun!"
 
-#: package/blueprints/main/routes.py:134
+#: package/blueprints/main/routes.py:135
 msgid "You cannot unfollow yourself!"
 msgstr "Sie können sich nicht nicht mehr selber folgen!"
 
-#: package/blueprints/main/routes.py:138
+#: package/blueprints/main/routes.py:139
 #, python-format
 msgid "You are no longer following %(user1)s!"
 msgstr "Sie folgen nicht länger %(user1)s!"
@@ -220,15 +224,15 @@ msgstr "Startseite"
 msgid "Explore"
 msgstr "Entdecken"
 
-#: package/blueprints/main/templates/base.html:27
+#: package/blueprints/main/templates/base.html:36
 msgid "Login"
 msgstr "Login"
 
-#: package/blueprints/main/templates/base.html:29
+#: package/blueprints/main/templates/base.html:38
 msgid "Profile"
 msgstr "Profil"
 
-#: package/blueprints/main/templates/base.html:30
+#: package/blueprints/main/templates/base.html:39
 msgid "Logout"
 msgstr "Ausloggen"
 
@@ -250,6 +254,18 @@ msgstr "Neuere Posts"
 #: package/blueprints/main/templates/user.html:50
 msgid "Older posts"
 msgstr "Ältere Posts"
+
+#: package/blueprints/main/templates/search.html:4
+msgid "Search Results"
+msgstr ""
+
+#: package/blueprints/main/templates/search.html:13
+msgid "Previous results"
+msgstr ""
+
+#: package/blueprints/main/templates/search.html:18
+msgid "Next results"
+msgstr ""
 
 #: package/blueprints/main/templates/user.html:8
 msgid "User"
@@ -281,7 +297,7 @@ msgstr "Folgen"
 msgid "Unfollow"
 msgstr "Nicht mehr folgen"
 
-#: package/core/__init__.py:20
+#: package/core/__init__.py:21
 msgid "Please log in to access this page."
 msgstr "Bitte loggen Sie sich ein um Zugriff auf diese Seite zu erlange."
 
